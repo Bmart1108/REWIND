@@ -11,7 +11,7 @@ function getValues() {
     displayData(revString);
 }
 
-// this is out generate data function
+// this is  generate data function
 function reverseAString(userString) {
 
     let revString = "";

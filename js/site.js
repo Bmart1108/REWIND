@@ -28,5 +28,5 @@ function reverseAString(userString) {
 function displayData(revString) {
 
     document.getElementById("msg").innerHTML = `Your String Reversed is: ${revString}`;
-    document.getElementById("alert").classList.remove("invisible");
+    document.getElementById("alert").classList.remove("d-none");
 }

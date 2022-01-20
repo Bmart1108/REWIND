@@ -14,8 +14,16 @@ main>.container {
 
 /*-----NAVBAR STYLES---*/
 .navbarBG {
-    background-color: var(--bm-dark-color);
+    background-color:cornflowerblue;
+    
 }
+
+
+
+
+
+
+
 
 
 /*----CHECKBOX COLORS----*/
@@ -74,14 +82,16 @@ main>.container {
 
 /*----FOOTER STYLES----*/
 .footer{
-    background-color: var(--bm-dark-color);
+    background-color:cornflowerblue;
     padding-right: 1rem;
-    color: var(--bm-light-color);
-
+     color: var(--bm-light-color);
 }
+
+
+
 .sticky-footer {
     position: sticky;
-    left: 0;
+    left:0;
     bottom: 0;
     width: 100%;
 }

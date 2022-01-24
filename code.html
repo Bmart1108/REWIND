@@ -13,13 +13,13 @@
 
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/BMAPPTOUCHICON.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/BMFAVICON32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/BMAPPTOUCHICON.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/BMFAVICON32x32.png">
 
 
     <!-- Custom CSS -->
     <link href="css/site.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="/css/prism.css">
 
 </head>
@@ -48,12 +48,13 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="code.html">The Code</a>
                     </li>
-                       <li class="nav-item">
-                           <a class="nav-link" aria-current="page" href="https://github.com/Bmart1108/REWIND">My
-                               Repo</a>
-                       </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://bmartin-portfolio.netlify.app/">About</a>
+                        <a class="nav-link" aria-current="page" href="https://github.com/Bmart1108/REWIND">My
+                            Repo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border border-2" target="_blank"
+                            href="https://bmartin-portfolio.netlify.app/">Visit My Portfolio</a>
                     </li>
 
                 </ul>
@@ -67,28 +68,44 @@
             <div class="row">
                 <div class="col-12 col-lg-8">
                     <pre class="line-numbers"><code class="language-js">
-// display a message to the user
-function getMessage(){
+// pull the user entered string from the page
+function getValues() {
+let userString = document.getElementById("revString").value;
 
-let userMessage = document.getElementById("message").value;
+//call reverse a string
+let revString = reverseAString(userString);
 
-Swal.fire({
-position: 'top-end',
-icon: 'success',
-title: 'Your work has been saved',
-showConfirmButton: false,
-timer: 1500
-})
-console.log(userMessage);
-}; 
-                    </code>
+//Display the reverse string
+displayData(revString);
+}
+
+// this is generate data function
+function reverseAString(userString) {
+
+let revString = "";
+
+for (let index = userString.length - 1; index >= 0; index--) {
+revString += userString[index];
+
+}
+
+return revString;
+}
+
+//display out reversed string to the page
+function displayData(revString) {
+
+document.getElementById("msg").innerHTML = `Your String Reversed is: ${revString}`;
+document.getElementById("alert").classList.remove("d-none");
+} </code>
                     </pre>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <p>The code is structured in one function. It accesses the unser's input and displays a SweetAlert
-                        window.</p>
-                    <h5>getMessage</h5>
-                    <p>Prints the user's inputted message.</p>
+                    <p class="lead">The code is structured in two functions. It accesses the user's input, reverses it and displays it to the window.</p>
+                    <h5>getValues</h5>
+                    <p>Gathers the user's input.</p>
+                    <h5>reverseAString</h5>
+                    <p>This takes the user's input, reverses it and displays it back to the user.</p>
                 </div>
             </div>
         </div>
@@ -99,7 +116,8 @@ console.log(userMessage);
             <div class="row row-cols-1 row-cols-lg-3 gy-2">
                 <div class="col order-last order-lg-first">
                     <div>
-                        <span class="fw-bold">&copy;2022</span><span class="fw-bold"> Brandon Martin | bmart1108@gmail.com</span>
+                        <span class="fw-bold">&copy;2022</span><span class="fw-bold"> Brandon Martin |
+                            bmart1108@gmail.com</span>
                     </div>
                 </div>
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">

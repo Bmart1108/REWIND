@@ -14,7 +14,13 @@ main>.container {
 
 /*-----NAVBAR STYLES---*/
 .navbarBG {
-    background-color:cornflowerblue;
+  background: #E6DADA;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #274046, #E6DADA);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #274046, #E6DADA);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     
 }
 
@@ -29,7 +35,7 @@ main>.container {
 /*----CHECKBOX COLORS----*/
 
 .checklisticon{
-    color:var(--bm-secondary-color);
+    color: gray
 }
 
 /*----ICON COLORS----*/
@@ -66,7 +72,7 @@ main>.container {
 
 .btn-primary{
     color: white !important;
-    background-color: cornflowerblue !important;
+    background-color: gray!important;
     border-color: var(--bm-dark-color);
 }
 
@@ -82,7 +88,13 @@ main>.container {
 
 /*----FOOTER STYLES----*/
 .footer{
-    background-color:cornflowerblue;
+    background: #E6DADA;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #274046, #E6DADA);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #274046, #E6DADA);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     padding-right: 1rem;
      color: var(--bm-light-color);
 }
@@ -97,12 +109,12 @@ main>.container {
 }
 
 footer .social>a{
-    color: var(--bm-light-color);
+    color: var(--bm-dark-color);
     opacity: .75;
 
 }
 
 footer .social>a:hover{
-    color:var(--bm-secondary-color);
+    color: red;
     opacity: .90;
 }

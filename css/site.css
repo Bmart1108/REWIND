@@ -53,21 +53,21 @@ main>.container {
 /*----Button Styles override Bootstrap Styles----*/
 .btn-outline-primary{
     color: var(--bm-dark-color);
-    border-color: var(--bm-secondary-color) !important;
+    border-color: var(--bm-dark-color) !important;
 }
 
 .btn-outline-primary:hover,
 .btn-outline-primary:active,
 .btn-outline-primary:focus{
-    border-color: var(--bm-primary-color) !important;
-    background-color: var(--bm-secondary-color);
+    border-color: cornflowerblue !important;
+    background-color: var(--bm-dark-color);
  }
 
 
 .btn-primary{
     color: white !important;
-    background-color: var(--bm-secondary-color) !important;
-    border-color: var(--bm-secondary-color);
+    background-color: cornflowerblue !important;
+    border-color: var(--bm-dark-color);
 }
 
 .btn-primary:hover,
@@ -75,7 +75,7 @@ main>.container {
 .btn-primary:visited,
 .btn-primary:focus{
     filter: brightness(1.1) !important;
-    border-color: var(--bm-secondary-color);
+    border-color: var(--bm-dark-color);
 }
 
 
